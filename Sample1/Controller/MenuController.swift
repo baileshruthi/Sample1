@@ -11,12 +11,9 @@ import UIKit
 
 class MenuController : UITableViewController {
     
-    
-   
     @IBOutlet var menuTableView: UITableView!
     
     let menuArray = ["Home", "Products", "Networks", "Reports", "Payments", "My Account", "ShareApp", "Logout"]
-   // let imageArray: [UIImage] = [team-1, team-2, team-3, team-4]
     let nameArray = ["Dealer1","Dealer2","Dealer3","Dealer4"]
     
     override func viewDidLoad() {
@@ -24,7 +21,6 @@ class MenuController : UITableViewController {
         
         menuTableView.delegate = self
         menuTableView.dataSource = self
-        
         menuTableView.separatorStyle = .none
     }
     
@@ -47,26 +43,20 @@ class MenuController : UITableViewController {
     }
     
     //TODO: Declare configureTableView here:
-//    func configureTableView () {
-//        messageTableView.rowHeight = UITableViewAutomaticDimension
-//        messageTableView.estimatedRowHeight = 120.0
-//    }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 68.0
     }
     
-    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        
         let headerCell = tableView.dequeueReusableCell(withIdentifier: "customHeaderCell") as! HeaderCell
-       // cell.headerImage.image = imageArray[section]
         headerCell.headerLabel.text = nameArray[section]
         
         return headerCell
     }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 123
+        return 123.0
 
     }
     
