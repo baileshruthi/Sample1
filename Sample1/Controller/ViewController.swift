@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func menuButtonPressed(_ sender: Any) {
-        print("menu button pressed")
         performSegue(withIdentifier: "goToMenu", sender: self)
     }
     
@@ -32,6 +31,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unableToDeliverProductsButtonPressed(_ sender: Any) {
+       // performSegue(withIdentifier: "goToUnableToDeliver", sender: self)
     }
     
 }
