@@ -15,6 +15,7 @@ class UnableToDeliver: UIViewController, UITextFieldDelegate, UIPickerViewDelega
     var productArray = ["Milk","Paneer","Tofu","Curd","Butter","Cheese","Cream"]
     var nameArray = ["Sai","Shiva","Raju","Narshima","Kattie","Sunita","Srinu"]
     let picker = UIPickerView()
+    let namePicker = UIPickerView()
 
     
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
@@ -23,6 +24,7 @@ class UnableToDeliver: UIViewController, UITextFieldDelegate, UIPickerViewDelega
     @IBOutlet weak var fromDate: UITextField!
     @IBOutlet weak var toDate: UITextField!
     
+   
     //text date picker variables
     var datePicker = UIDatePicker()
     
@@ -31,9 +33,12 @@ class UnableToDeliver: UIViewController, UITextFieldDelegate, UIPickerViewDelega
         picker.delegate = self
         picker.dataSource = self
         
+        namePicker.delegate = self
+        namePicker.dataSource = self
+        
         //binding textfield to picker
         productPicker.inputView = picker
-        //deliveryBoyNamePicker.inputView = picker
+        deliveryBoyNamePicker.inputView = namePicker
         
         createDatePicker()
     }
@@ -45,20 +50,40 @@ class UnableToDeliver: UIViewController, UITextFieldDelegate, UIPickerViewDelega
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         picker.backgroundColor = UIColor.lightGray
-        
+        if pickerView == picker {
         return productArray.count
+        }
+        if pickerView == namePicker {
+            return nameArray.count
+        }
+        else {
+            return 0
+        }
+        
       
      }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-       
+       if pickerView == picker {
             return productArray[row]
+       }
+        if pickerView == namePicker {
+            return nameArray[row]
+        } else {
+            return nil
+        }
+        
        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
        
+         if pickerView == picker {
         productPicker.text = productArray[row]
+         }
+        if pickerView == namePicker{
+            deliveryBoyNamePicker.text = nameArray[row]
+        }
         self.view.endEditing(false)
     }
     
