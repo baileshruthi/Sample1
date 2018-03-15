@@ -14,10 +14,9 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code goes here
-//        
-//        
-//    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code goes here
+    }
+    
 }

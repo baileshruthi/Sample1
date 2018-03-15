@@ -11,10 +11,15 @@ import UIKit
 
 class MenuController : UITableViewController {
     
+    var randomIndex1 : Int = 0
+    
     @IBOutlet var menuTableView: UITableView!
     
     let menuArray = ["Home", "Products", "Networks", "Reports", "Payments", "My Account", "ShareApp", "Logout"]
     let nameArray = ["Dealer1","Dealer2","Dealer3","Dealer4"]
+    let imageArray = ["team-1","team-2","team-3","team-4"]
+    
+    let identities = ["A","B","C","D","E","F","G","H"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +27,7 @@ class MenuController : UITableViewController {
         menuTableView.delegate = self
         menuTableView.dataSource = self
         menuTableView.separatorStyle = .none
+        
     }
     
     //MARK: - TableView DataSource Methods
@@ -44,19 +50,9 @@ class MenuController : UITableViewController {
     
     // Declare didSelectRow here:
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //navigationController?.pushViewController(MenuController(), animated: true)
-        if indexPath.row == 0 {
-            print("Home")
-//            self.performSegue(withIdentifier: "Home", sender: self)
-        }
-        if indexPath.row == 1 {
-            print("Products")
-            //self.performSegue(withIdentifier: "goToProducts", sender: self)
-        }
-//        else {
-//            print("menu cell selected")
-////            self.performSegue(withIdentifier: "Home", sender: self)
-//        }
+        let mcName = identities[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier: mcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
     }
 
     // Declare configureTableView here:
@@ -64,18 +60,26 @@ class MenuController : UITableViewController {
         return 68.0
     }
     
+    func updateHeaderImages() {
+        let headerCell = tableView.dequeueReusableCell(withIdentifier: "customHeaderCell") as! HeaderCell
+        randomIndex1 = Int(arc4random_uniform(4))
+        headerCell.headerImage.image = UIImage(named: imageArray[randomIndex1])
+    }
+    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       
+        
         let headerCell = tableView.dequeueReusableCell(withIdentifier: "customHeaderCell") as! HeaderCell
         headerCell.headerLabel.text = nameArray[section]
         
         return headerCell
     }
-
+    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 123.0
-
+        return 125.0
+        
     }
+    
+    
     
    
 }
