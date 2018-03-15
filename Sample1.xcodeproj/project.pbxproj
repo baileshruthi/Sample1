@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC143EAF2057B6D300637071 /* AddNewProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143EAE2057B6D300637071 /* AddNewProductsController.swift */; };
+		AC143EB12058FD5200637071 /* ProductsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC143EB02058FD5200637071 /* ProductsController.swift */; };
 		AC163F23204D5179005E438E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC163F22204D5179005E438E /* AppDelegate.swift */; };
 		AC163F25204D5179005E438E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC163F24204D5179005E438E /* ViewController.swift */; };
 		AC163F28204D5179005E438E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC163F26204D5179005E438E /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC143EAE2057B6D300637071 /* AddNewProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProductsController.swift; sourceTree = "<group>"; };
+		AC143EB02058FD5200637071 /* ProductsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsController.swift; sourceTree = "<group>"; };
 		AC163F1F204D5179005E438E /* Sample1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC163F22204D5179005E438E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC163F24204D5179005E438E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				AC163F24204D5179005E438E /* ViewController.swift */,
 				ACB549D0204D8E120043F75B /* MenuController.swift */,
 				ACB54A06204FF7770043F75B /* UnableToDeliverController.swift */,
+				AC143EB02058FD5200637071 /* ProductsController.swift */,
+				AC143EAE2057B6D300637071 /* AddNewProductsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 				AC163F25204D5179005E438E /* ViewController.swift in Sources */,
 				ACB549D1204D8E120043F75B /* MenuController.swift in Sources */,
 				ACB549DA204E9B840043F75B /* Menu.swift in Sources */,
+				AC143EAF2057B6D300637071 /* AddNewProductsController.swift in Sources */,
 				ACB549E3204FAC760043F75B /* CustomMenuCell.swift in Sources */,
 				AC163F23204D5179005E438E /* AppDelegate.swift in Sources */,
+				AC143EB12058FD5200637071 /* ProductsController.swift in Sources */,
 				ACB549DE204EB3890043F75B /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

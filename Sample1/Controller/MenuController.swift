@@ -26,12 +26,12 @@ class MenuController : UITableViewController {
     
     //MARK: - TableView DataSource Methods
     
-    //TODO: Declare numberOfRowsInSection here:
+    // Declare numberOfRowsInSection here:
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuArray.count
     }
     
-    //TODO: Declare cellForRowAtIndexPath here:
+    // Declare cellForRowAtIndexPath here:
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         menuTableView.backgroundView?.backgroundColor = UIColor.black
         let menuCell = tableView.dequeueReusableCell(withIdentifier: "cell", for:indexPath)
@@ -42,7 +42,24 @@ class MenuController : UITableViewController {
         return menuCell
     }
     
-    //TODO: Declare configureTableView here:
+    // Declare didSelectRow here:
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //navigationController?.pushViewController(MenuController(), animated: true)
+        if indexPath.row == 0 {
+            print("Home")
+//            self.performSegue(withIdentifier: "Home", sender: self)
+        }
+        if indexPath.row == 1 {
+            print("Products")
+            //self.performSegue(withIdentifier: "goToProducts", sender: self)
+        }
+//        else {
+//            print("menu cell selected")
+////            self.performSegue(withIdentifier: "Home", sender: self)
+//        }
+    }
+
+    // Declare configureTableView here:
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 68.0
     }
@@ -60,4 +77,5 @@ class MenuController : UITableViewController {
 
     }
     
+   
 }
