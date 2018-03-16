@@ -50,9 +50,13 @@ class MenuController : UITableViewController {
     
     // Declare didSelectRow here:
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mcName = identities[indexPath.row]
-        let viewController = storyboard?.instantiateViewController(withIdentifier: mcName)
-        self.navigationController?.pushViewController(viewController!, animated: true)
+        if indexPath.row == 0 {
+            navigationController?.popToRootViewController(animated: true)
+        } else {
+            let mcName = identities[indexPath.row]
+            let viewController = storyboard?.instantiateViewController(withIdentifier: mcName)
+            self.navigationController?.pushViewController(viewController!, animated: true)
+        }
     }
 
     // Declare configureTableView here:
