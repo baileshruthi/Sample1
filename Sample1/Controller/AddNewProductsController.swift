@@ -9,18 +9,18 @@
 import Foundation
 import UIKit
 
-class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
     var productArray = ["Milk","Paneer","Tofu","Curd","Butter","Cheese","Cream"]
-    var brandArray = ["Amul","Vijaya","Heritage","Masqati","Dodla"]
+    var brandArray = ["Amul","Heritage","Vijaya","Masquati","Dodla"]
     var quantityArray = ["10","20","30","40","50","60","70","80","90","100"]
     
-    //pickerView variables
+    //picker view variables
     let productPicker = UIPickerView()
     let brandPicker = UIPickerView()
     let quantityPicker = UIPickerView()
     
-    @IBOutlet weak var type: UITextField!
+    @IBOutlet weak var productType: UITextField!
     @IBOutlet weak var brand: UITextField!
     @IBOutlet weak var price: UITextField!
     @IBOutlet weak var quantity: UITextField!
@@ -28,19 +28,20 @@ class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        productPicker.dataSource = self
         productPicker.delegate = self
+        productPicker.dataSource = self
         
-        brandPicker.dataSource = self
         brandPicker.delegate = self
+        brandPicker.dataSource = self
         
-        quantityPicker.dataSource = self
         quantityPicker.delegate = self
+        quantityPicker.dataSource = self
         
-        //bindind textfield to picker
-        type.inputView = productPicker
+        //binding textfield to picker
+        productType.inputView = productPicker
         brand.inputView = brandPicker
         quantity.inputView = quantityPicker
+        
         
     }
     
@@ -50,14 +51,14 @@ class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        productPicker.backgroundColor = UIColor.lightGray
+        pickerView.backgroundColor = UIColor.lightGray
         if pickerView == productPicker {
             return productArray.count
         }
         if pickerView == brandPicker {
             return brandArray.count
         }
-        if pickerView == quantityPicker {
+        if pickerView == quantityPicker{
             return quantityArray.count
         }
         else {
@@ -73,16 +74,15 @@ class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPicker
             return brandArray[row]
         }
         if pickerView == quantityPicker {
-            return quantityArray[row]
-        }
-        else {
+            return (quantityArray[row])
+        } else {
             return nil
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == productPicker {
-            type.text = productArray[row]
+            productType.text = productArray[row]
         }
         if pickerView == brandPicker {
             brand.text = brandArray[row]
