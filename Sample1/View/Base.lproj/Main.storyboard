@@ -360,6 +360,7 @@
                         <viewLayoutGuide key="safeArea" id="jAr-NH-jOV"/>
                     </view>
                     <navigationItem key="navigationItem" title="UNABLE TO DELIVER" id="pSu-uE-ARr" propertyAccessControl="none">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="vg1-bg-0rg"/>
                         <barButtonItem key="rightBarButtonItem" title="Menu" id="zFn-PR-Z7W">
                             <color key="tintColor" red="0.02915690785" green="0.029445590099999999" blue="0.029445590099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
@@ -391,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1m-nY-nVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="-597"/>
+            <point key="canvasLocation" x="5743" y="-598"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VZk-sl-uDj">
@@ -407,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iC4-9S-3VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2864" y="-598"/>
+            <point key="canvasLocation" x="5742" y="211"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lg8-rP-dvq">
@@ -466,15 +467,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productAddButtton" id="Uv6-Pa-Pjd" customClass="ProductAddButton" customModule="Sample1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productAddButtton" rowHeight="70" id="Uv6-Pa-Pjd" customClass="ProductAddButton" customModule="Sample1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uv6-Pa-Pjd" id="FUV-3u-eZu">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYK-6G-f47">
-                                            <rect key="frame" x="41" y="13" width="332" height="30"/>
+                                            <rect key="frame" x="41" y="19" width="332" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.76023937490000004" green="0.76776649750000003" blue="0.76776649750000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
@@ -490,11 +491,11 @@
                                 </tableViewCellContentView>
                                 <viewLayoutGuide key="safeArea" id="65S-7w-sSg"/>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" id="JmK-sl-CJ0" customClass="ProductCell" customModule="Sample1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="productCell" rowHeight="70" id="JmK-sl-CJ0" customClass="ProductCell" customModule="Sample1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="98" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JmK-sl-CJ0" id="jDq-Iq-I3C">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rs. 120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nC-FS-47U">
@@ -522,6 +523,7 @@
                                     <outlet property="productImage" destination="i3c-Pc-geg" id="h46-a4-pTF"/>
                                     <outlet property="productName" destination="08u-7W-130" id="t6G-e8-4Fb"/>
                                     <outlet property="productPrice" destination="0nC-FS-47U" id="rFz-EZ-fbQ"/>
+                                    <segue destination="0TB-1X-i8k" kind="show" identifier="goToEditProduct" id="aUa-lh-WId"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -537,7 +539,86 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojb-lK-MyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802.8985507246377" y="190.7608695652174"/>
+            <point key="canvasLocation" x="1671" y="-290"/>
+        </scene>
+        <!--EDIT PRODUCT-->
+        <scene sceneID="cxg-cn-8IF">
+            <objects>
+                <tableViewController title="EDIT PRODUCT" id="0TB-1X-i8k" customClass="EditProductController" customModule="Sample1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dqb-M2-IJH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customEditHeaderCell" rowHeight="163" id="BdS-VB-mdh" customClass="EditProductHeaderCell" customModule="Sample1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BdS-VB-mdh" id="ie1-fD-7OY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="162.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-03-19 at 1.23.29 PM" translatesAutoresizingMaskIntoConstraints="NO" id="zBg-6L-hXA">
+                                            <rect key="frame" x="165" y="23" width="88" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XYZ Milk Product (250ml)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYg-cG-FEG">
+                                            <rect key="frame" x="0.0" y="118" width="414" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <viewLayoutGuide key="safeArea" id="TlB-x6-WHX"/>
+                                <connections>
+                                    <outlet property="editHeaderImage" destination="zBg-6L-hXA" id="w58-if-2EM"/>
+                                    <outlet property="editHeaderTitle" destination="xYg-cG-FEG" id="gjM-p0-RLr"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="customEditCell" rowHeight="70" id="CoC-ao-1mJ" customClass="EditProductCell" customModule="Sample1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="191" width="414" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CoC-ao-1mJ" id="DcF-uz-Sri">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvE-bs-WPy">
+                                            <rect key="frame" x="20" y="24" width="173" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" red="0.49602804319999999" green="0.50594860409999998" blue="0.50594860409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3X-dz-Tys">
+                                            <rect key="frame" x="201" y="24" width="193" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <viewLayoutGuide key="safeArea" id="gnI-rH-mjo"/>
+                                <connections>
+                                    <outlet property="editProductCellLabel" destination="xvE-bs-WPy" id="M9L-jz-9pW"/>
+                                    <outlet property="editProductCellText" destination="i3X-dz-Tys" id="7DQ-XR-jQx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0TB-1X-i8k" id="98G-J8-6hF"/>
+                            <outlet property="delegate" destination="0TB-1X-i8k" id="UxD-AJ-wyb"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="editProductTable" destination="dqb-M2-IJH" id="y41-7b-OZ3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cc-EL-wrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="142"/>
         </scene>
         <!--ADD NEW PRODUCTS-->
         <scene sceneID="uXx-0d-j8M">
@@ -645,7 +726,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4R-cl-Yqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2791" y="191"/>
+            <point key="canvasLocation" x="2790" y="-570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="drI-Bm-Dpg">
