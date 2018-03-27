@@ -29,6 +29,10 @@
 		ACF225442060E77F00B88054 /* EditProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF225432060E77F00B88054 /* EditProductController.swift */; };
 		ACF2254720610C6400B88054 /* EditProductHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2254520610C6400B88054 /* EditProductHeaderCell.swift */; };
 		ACF2254820610C6400B88054 /* EditProductHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF2254620610C6400B88054 /* EditProductHeaderCell.xib */; };
+		ACF2254A2061261000B88054 /* DesignableBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF225492061261000B88054 /* DesignableBtn.swift */; };
+		ACF2254D206A0C3A00B88054 /* NetworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2254B206A0C3A00B88054 /* NetworkCell.swift */; };
+		ACF2254E206A0C3A00B88054 /* NetworkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF2254C206A0C3A00B88054 /* NetworkCell.xib */; };
+		ACF22551206A130500B88054 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF22550206A130500B88054 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		ACF225432060E77F00B88054 /* EditProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProductController.swift; sourceTree = "<group>"; };
 		ACF2254520610C6400B88054 /* EditProductHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProductHeaderCell.swift; sourceTree = "<group>"; };
 		ACF2254620610C6400B88054 /* EditProductHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProductHeaderCell.xib; sourceTree = "<group>"; };
+		ACF225492061261000B88054 /* DesignableBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableBtn.swift; sourceTree = "<group>"; };
+		ACF2254B206A0C3A00B88054 /* NetworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCell.swift; sourceTree = "<group>"; };
+		ACF2254C206A0C3A00B88054 /* NetworkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkCell.xib; sourceTree = "<group>"; };
+		ACF22550206A130500B88054 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 				ACB549E0204EB3910043F75B /* Header Cell */,
 				ACF2253D205FAC4F00B88054 /* Product Cells */,
 				ACF225422060E36300B88054 /* Edit Prodcut Cell */,
+				ACF2254F206A125100B88054 /* Network Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +129,8 @@
 				ACF22531205B9A0200B88054 /* MyProductsController.swift */,
 				AC143EAE2057B6D300637071 /* AddNewProductsController.swift */,
 				ACF225432060E77F00B88054 /* EditProductController.swift */,
+				ACF225492061261000B88054 /* DesignableBtn.swift */,
+				ACF22550206A130500B88054 /* NetworkController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +172,15 @@
 				ACF2254620610C6400B88054 /* EditProductHeaderCell.xib */,
 			);
 			path = "Edit Prodcut Cell";
+			sourceTree = "<group>";
+		};
+		ACF2254F206A125100B88054 /* Network Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACF2254B206A0C3A00B88054 /* NetworkCell.swift */,
+				ACF2254C206A0C3A00B88054 /* NetworkCell.xib */,
+			);
+			path = "Network Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +244,7 @@
 			files = (
 				ACF22538205F885E00B88054 /* ProductAddButton.xib in Resources */,
 				ACB549DF204EB3890043F75B /* HeaderCell.xib in Resources */,
+				ACF2254E206A0C3A00B88054 /* NetworkCell.xib in Resources */,
 				ACF2254820610C6400B88054 /* EditProductHeaderCell.xib in Resources */,
 				AC163F2D204D5179005E438E /* LaunchScreen.storyboard in Resources */,
 				ACF2253C205FA5ED00B88054 /* ProductCell.xib in Resources */,
@@ -243,13 +264,16 @@
 				ACF2254720610C6400B88054 /* EditProductHeaderCell.swift in Sources */,
 				ACB54A07204FF7770043F75B /* UnableToDeliverController.swift in Sources */,
 				ACF2253B205FA5ED00B88054 /* ProductCell.swift in Sources */,
+				ACF22551206A130500B88054 /* NetworkController.swift in Sources */,
 				AC163F25204D5179005E438E /* ViewController.swift in Sources */,
 				ACF22532205B9A0200B88054 /* MyProductsController.swift in Sources */,
 				ACF225442060E77F00B88054 /* EditProductController.swift in Sources */,
 				ACF22537205F885E00B88054 /* ProductAddButton.swift in Sources */,
+				ACF2254D206A0C3A00B88054 /* NetworkCell.swift in Sources */,
 				ACB549D1204D8E120043F75B /* MenuController.swift in Sources */,
 				ACB549DA204E9B840043F75B /* Menu.swift in Sources */,
 				AC143EAF2057B6D300637071 /* AddNewProductsController.swift in Sources */,
+				ACF2254A2061261000B88054 /* DesignableBtn.swift in Sources */,
 				ACB549E3204FAC760043F75B /* CustomMenuCell.swift in Sources */,
 				AC163F23204D5179005E438E /* AppDelegate.swift in Sources */,
 				ACB549DE204EB3890043F75B /* HeaderCell.swift in Sources */,
