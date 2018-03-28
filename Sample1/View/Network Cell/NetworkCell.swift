@@ -17,7 +17,9 @@ class NetworkCell: UITableViewCell {
     @IBAction func consumersButtonPressed(_ sender: Any) {
     }
     
-
+    @IBAction func addNewLocationButtonPressed(_ sender: Any) {
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -38,7 +38,7 @@ class MyProductsController: UITableViewController {
         productsCell.productName.text = productsArray[indexPath.row]
         //productsCell.productName.textAlignment =  NSTextAlignment.center
         //productsCell.textLabel?.textColor = UIColor.black
-        productsCell.productName.font=UIFont.boldSystemFont(ofSize: 17.0)
+        productsCell.productName.font=UIFont.systemFont(ofSize: 17.0)
         return productsCell
     }
     

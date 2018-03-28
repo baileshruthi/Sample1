@@ -11,6 +11,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
         </array>
     </customFonts>
@@ -18,17 +19,18 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="networkTabCell" id="KGk-i7-Jjw" customClass="NetworkCell" customModule="Sample1" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="109.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQU-f8-7g3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D74-pO-KhS" customClass="DesignableBtn" customModule="Sample1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D74-pO-KhS" customClass="DesignableBtn" customModule="Sample1" customModuleProvider="target">
                                 <rect key="frame" x="8" y="15" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                 <state key="normal" title="LOCATIONS"/>
                                 <userDefinedRuntimeAttributes>
@@ -71,8 +73,9 @@
                                     <action selector="deliveryBoyButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4Ha-er-Vnr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqL-mh-INi" customClass="DesignableBtn" customModule="Sample1" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqL-mh-INi" customClass="DesignableBtn" customModule="Sample1" customModuleProvider="target">
                                 <rect key="frame" x="272" y="15" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                 <state key="normal" title="CONSUMERS"/>
                                 <userDefinedRuntimeAttributes>
@@ -93,30 +96,37 @@
                                     <action selector="consumersButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DGY-uJ-yTA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtt-Cz-lCe">
+                                <rect key="frame" x="6" y="61" width="402" height="31"/>
+                                <color key="backgroundColor" red="0.76023937490000004" green="0.76776649750000003" blue="0.76776649750000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <viewLayoutGuide key="safeArea" id="GlE-CF-qbM"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="ADD A NEW LOCATION HERE">
+                                    <color key="titleColor" red="0.00066756556680000001" green="0.0006741751269" blue="0.0006741751269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewLocationButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kqk-cm-CUY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="0Ow-Gq-ZUx" secondAttribute="trailing" constant="141" id="7DI-MW-3aY"/>
-                            <constraint firstItem="0Ow-Gq-ZUx" firstAttribute="leading" secondItem="EQU-f8-7g3" secondAttribute="leading" constant="141" id="7Zz-LN-fgg"/>
-                            <constraint firstItem="0Ow-Gq-ZUx" firstAttribute="top" secondItem="EQU-f8-7g3" secondAttribute="top" constant="15" id="AMy-pZ-VUQ"/>
-                            <constraint firstAttribute="bottom" secondItem="oqL-mh-INi" secondAttribute="bottom" constant="15" id="DbV-mk-mf0"/>
-                            <constraint firstItem="oqL-mh-INi" firstAttribute="leading" secondItem="EQU-f8-7g3" secondAttribute="leading" constant="272" id="Ozc-iv-jLF"/>
-                            <constraint firstItem="oqL-mh-INi" firstAttribute="top" secondItem="EQU-f8-7g3" secondAttribute="top" constant="15" id="Srf-Qj-7vm"/>
-                            <constraint firstAttribute="trailing" secondItem="oqL-mh-INi" secondAttribute="trailing" constant="8" id="UJ5-J8-ZLW"/>
-                            <constraint firstAttribute="bottom" secondItem="0Ow-Gq-ZUx" secondAttribute="bottom" constant="15" id="YcZ-Dv-kih"/>
-                            <constraint firstItem="D74-pO-KhS" firstAttribute="top" secondItem="EQU-f8-7g3" secondAttribute="top" constant="15" id="fix-ec-1Gi"/>
-                            <constraint firstAttribute="bottom" secondItem="D74-pO-KhS" secondAttribute="bottom" constant="15" id="gEi-r3-mWN"/>
-                            <constraint firstAttribute="trailing" secondItem="D74-pO-KhS" secondAttribute="trailing" constant="272" id="i9m-Nq-3c7"/>
-                            <constraint firstItem="D74-pO-KhS" firstAttribute="leading" secondItem="EQU-f8-7g3" secondAttribute="leading" constant="8" id="iQ0-69-sAi"/>
+                            <constraint firstItem="Dtt-Cz-lCe" firstAttribute="leading" secondItem="EQU-f8-7g3" secondAttribute="leading" constant="6" id="4Ht-tF-w8T"/>
+                            <constraint firstItem="Dtt-Cz-lCe" firstAttribute="top" secondItem="EQU-f8-7g3" secondAttribute="top" constant="61" id="7sQ-16-gi4"/>
+                            <constraint firstItem="0Ow-Gq-ZUx" firstAttribute="leading" secondItem="EQU-f8-7g3" secondAttribute="leading" constant="141" id="AVs-bb-Yl3"/>
+                            <constraint firstAttribute="bottom" secondItem="0Ow-Gq-ZUx" secondAttribute="bottom" constant="65" id="WkY-o4-8lz"/>
+                            <constraint firstAttribute="bottom" secondItem="Dtt-Cz-lCe" secondAttribute="bottom" constant="18" id="Xl9-v2-AyO"/>
+                            <constraint firstItem="0Ow-Gq-ZUx" firstAttribute="top" secondItem="EQU-f8-7g3" secondAttribute="top" constant="15" id="Zyw-Kc-J4x"/>
+                            <constraint firstAttribute="trailing" secondItem="Dtt-Cz-lCe" secondAttribute="trailing" constant="6" id="e7S-aJ-Q28"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ow-Gq-ZUx" secondAttribute="trailing" constant="141" id="eqB-vW-rDq"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="EQU-f8-7g3" secondAttribute="trailing" id="F2R-jO-lCw"/>
-                    <constraint firstItem="EQU-f8-7g3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ISa-cQ-bEp"/>
-                    <constraint firstAttribute="bottom" secondItem="EQU-f8-7g3" secondAttribute="bottom" constant="-0.5" id="SaL-pS-djD"/>
-                    <constraint firstAttribute="bottom" secondItem="EQU-f8-7g3" secondAttribute="bottom" id="Utv-pg-urL"/>
-                    <constraint firstItem="EQU-f8-7g3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bnC-Kz-brA"/>
+                    <constraint firstAttribute="bottom" secondItem="EQU-f8-7g3" secondAttribute="bottom" constant="-0.5" id="igG-R9-EqP"/>
+                    <constraint firstItem="EQU-f8-7g3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lwI-dP-3pJ"/>
+                    <constraint firstAttribute="trailing" secondItem="EQU-f8-7g3" secondAttribute="trailing" id="wgF-qA-tki"/>
+                    <constraint firstItem="EQU-f8-7g3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yDn-yc-vJu"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

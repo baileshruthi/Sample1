@@ -11,6 +11,9 @@ import UIKit
 
 class NetworkContoller: UITableViewController {
     
+    let location = ["MADHAPUR","HITECH CITY","KONDAPUR","KUKATPALLY","HOUSING BOARD","MOTHINAGAR","UPPAL","AYYAPPA SOCIETY","MIYAPUR"]
+    let pinCode = ["500081", "521445", "500014", "547894", "500081", "521445", "500014", "547894","500049"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,34 +22,32 @@ class NetworkContoller: UITableViewController {
     
     // Declare numberOfRowsInSection here:
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return location.count
     }
-    
+
     // Declare cellForRowAtIndexPath here:
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let productsCell = tableView.dequeueReusableCell(withIdentifier: "addLocation", for:indexPath)
-//        productsCell.productName.text = productsArray[indexPath.row]
-//        //productsCell.productName.textAlignment =  NSTextAlignment.center
-//        //productsCell.textLabel?.textColor = UIColor.black
-//        productsCell.productName.font=UIFont.boldSystemFont(ofSize: 17.0)
-        return productsCell
+        let networkCell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for:indexPath) as! LocationCell
+        networkCell.locationName.text = location[indexPath.row]
+        networkCell.locationPinCode.text = pinCode[indexPath.row]
+//        locationCell.productName.text = productsArray[indexPath.row]
+//        locationCell.productName.font=UIFont.boldSystemFont(ofSize: 17.0)
+        return networkCell
     }
    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50.0
+        return 60.0
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
         let headerCell = tableView.dequeueReusableCell(withIdentifier: "networkTabCell") as! NetworkCell
         return headerCell
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 70.0
+        return 115.0
     }
     
-    @IBAction func addNewLocationButtonPressed(_ sender: Any) {
-    }
+  
     
 }

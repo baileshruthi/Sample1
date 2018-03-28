@@ -33,6 +33,14 @@
 		ACF2254D206A0C3A00B88054 /* NetworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2254B206A0C3A00B88054 /* NetworkCell.swift */; };
 		ACF2254E206A0C3A00B88054 /* NetworkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF2254C206A0C3A00B88054 /* NetworkCell.xib */; };
 		ACF22551206A130500B88054 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF22550206A130500B88054 /* NetworkController.swift */; };
+		ACF22556206A3F5400B88054 /* AddNewLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF22555206A3F5400B88054 /* AddNewLocation.swift */; };
+		ACF22559206B6ADD00B88054 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF22557206B6ADC00B88054 /* LocationCell.swift */; };
+		ACF2255A206B6ADD00B88054 /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF22558206B6ADC00B88054 /* LocationCell.xib */; };
+		ACF2255D206B89F200B88054 /* CustomersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2255C206B89F200B88054 /* CustomersController.swift */; };
+		ACF22560206B93E200B88054 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2255E206B93E200B88054 /* CustomerCell.swift */; };
+		ACF22561206B93E200B88054 /* CustomerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF2255F206B93E200B88054 /* CustomerCell.xib */; };
+		ACF22566206B96F300B88054 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF22564206B96F300B88054 /* FooterCell.swift */; };
+		ACF22567206B96F300B88054 /* FooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF22565206B96F300B88054 /* FooterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +72,14 @@
 		ACF2254B206A0C3A00B88054 /* NetworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCell.swift; sourceTree = "<group>"; };
 		ACF2254C206A0C3A00B88054 /* NetworkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkCell.xib; sourceTree = "<group>"; };
 		ACF22550206A130500B88054 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		ACF22555206A3F5400B88054 /* AddNewLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewLocation.swift; sourceTree = "<group>"; };
+		ACF22557206B6ADC00B88054 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		ACF22558206B6ADC00B88054 /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		ACF2255C206B89F200B88054 /* CustomersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersController.swift; sourceTree = "<group>"; };
+		ACF2255E206B93E200B88054 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
+		ACF2255F206B93E200B88054 /* CustomerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerCell.xib; sourceTree = "<group>"; };
+		ACF22564206B96F300B88054 /* FooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
+		ACF22565206B96F300B88054 /* FooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +132,8 @@
 				ACF2253D205FAC4F00B88054 /* Product Cells */,
 				ACF225422060E36300B88054 /* Edit Prodcut Cell */,
 				ACF2254F206A125100B88054 /* Network Cell */,
+				ACF22564206B96F300B88054 /* FooterCell.swift */,
+				ACF22565206B96F300B88054 /* FooterCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,11 +144,9 @@
 				AC163F24204D5179005E438E /* ViewController.swift */,
 				ACB549D0204D8E120043F75B /* MenuController.swift */,
 				ACB54A06204FF7770043F75B /* UnableToDeliverController.swift */,
-				ACF22531205B9A0200B88054 /* MyProductsController.swift */,
-				AC143EAE2057B6D300637071 /* AddNewProductsController.swift */,
-				ACF225432060E77F00B88054 /* EditProductController.swift */,
+				ACF22552206A3C0700B88054 /* Products */,
 				ACF225492061261000B88054 /* DesignableBtn.swift */,
-				ACF22550206A130500B88054 /* NetworkController.swift */,
+				ACF2255B206B89C200B88054 /* Network */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,8 +195,32 @@
 			children = (
 				ACF2254B206A0C3A00B88054 /* NetworkCell.swift */,
 				ACF2254C206A0C3A00B88054 /* NetworkCell.xib */,
+				ACF22557206B6ADC00B88054 /* LocationCell.swift */,
+				ACF22558206B6ADC00B88054 /* LocationCell.xib */,
+				ACF2255E206B93E200B88054 /* CustomerCell.swift */,
+				ACF2255F206B93E200B88054 /* CustomerCell.xib */,
 			);
 			path = "Network Cell";
+			sourceTree = "<group>";
+		};
+		ACF22552206A3C0700B88054 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF22531205B9A0200B88054 /* MyProductsController.swift */,
+				AC143EAE2057B6D300637071 /* AddNewProductsController.swift */,
+				ACF225432060E77F00B88054 /* EditProductController.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		ACF2255B206B89C200B88054 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ACF22550206A130500B88054 /* NetworkController.swift */,
+				ACF22555206A3F5400B88054 /* AddNewLocation.swift */,
+				ACF2255C206B89F200B88054 /* CustomersController.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF2255A206B6ADD00B88054 /* LocationCell.xib in Resources */,
 				ACF22538205F885E00B88054 /* ProductAddButton.xib in Resources */,
+				ACF22567206B96F300B88054 /* FooterCell.xib in Resources */,
+				ACF22561206B93E200B88054 /* CustomerCell.xib in Resources */,
 				ACB549DF204EB3890043F75B /* HeaderCell.xib in Resources */,
 				ACF2254E206A0C3A00B88054 /* NetworkCell.xib in Resources */,
 				ACF2254820610C6400B88054 /* EditProductHeaderCell.xib in Resources */,
@@ -263,11 +306,15 @@
 			files = (
 				ACF2254720610C6400B88054 /* EditProductHeaderCell.swift in Sources */,
 				ACB54A07204FF7770043F75B /* UnableToDeliverController.swift in Sources */,
+				ACF22566206B96F300B88054 /* FooterCell.swift in Sources */,
 				ACF2253B205FA5ED00B88054 /* ProductCell.swift in Sources */,
 				ACF22551206A130500B88054 /* NetworkController.swift in Sources */,
+				ACF22560206B93E200B88054 /* CustomerCell.swift in Sources */,
 				AC163F25204D5179005E438E /* ViewController.swift in Sources */,
+				ACF2255D206B89F200B88054 /* CustomersController.swift in Sources */,
 				ACF22532205B9A0200B88054 /* MyProductsController.swift in Sources */,
 				ACF225442060E77F00B88054 /* EditProductController.swift in Sources */,
+				ACF22556206A3F5400B88054 /* AddNewLocation.swift in Sources */,
 				ACF22537205F885E00B88054 /* ProductAddButton.swift in Sources */,
 				ACF2254D206A0C3A00B88054 /* NetworkCell.swift in Sources */,
 				ACB549D1204D8E120043F75B /* MenuController.swift in Sources */,
@@ -275,6 +322,7 @@
 				AC143EAF2057B6D300637071 /* AddNewProductsController.swift in Sources */,
 				ACF2254A2061261000B88054 /* DesignableBtn.swift in Sources */,
 				ACB549E3204FAC760043F75B /* CustomMenuCell.swift in Sources */,
+				ACF22559206B6ADD00B88054 /* LocationCell.swift in Sources */,
 				AC163F23204D5179005E438E /* AppDelegate.swift in Sources */,
 				ACB549DE204EB3890043F75B /* HeaderCell.swift in Sources */,
 				ACF225402060E27400B88054 /* EditProductCell.swift in Sources */,
