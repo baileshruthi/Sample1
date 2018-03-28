@@ -41,6 +41,7 @@
 		ACF22561206B93E200B88054 /* CustomerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF2255F206B93E200B88054 /* CustomerCell.xib */; };
 		ACF22566206B96F300B88054 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF22564206B96F300B88054 /* FooterCell.swift */; };
 		ACF22567206B96F300B88054 /* FooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF22565206B96F300B88054 /* FooterCell.xib */; };
+		ACF22569206BA21B00B88054 /* CustomerProfileContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF22568206BA21B00B88054 /* CustomerProfileContoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		ACF2255F206B93E200B88054 /* CustomerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerCell.xib; sourceTree = "<group>"; };
 		ACF22564206B96F300B88054 /* FooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
 		ACF22565206B96F300B88054 /* FooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterCell.xib; sourceTree = "<group>"; };
+		ACF22568206BA21B00B88054 /* CustomerProfileContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerProfileContoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +146,8 @@
 				AC163F24204D5179005E438E /* ViewController.swift */,
 				ACB549D0204D8E120043F75B /* MenuController.swift */,
 				ACB54A06204FF7770043F75B /* UnableToDeliverController.swift */,
-				ACF22552206A3C0700B88054 /* Products */,
 				ACF225492061261000B88054 /* DesignableBtn.swift */,
+				ACF22552206A3C0700B88054 /* Products */,
 				ACF2255B206B89C200B88054 /* Network */,
 			);
 			path = Controller;
@@ -219,6 +221,7 @@
 				ACF22550206A130500B88054 /* NetworkController.swift */,
 				ACF22555206A3F5400B88054 /* AddNewLocation.swift */,
 				ACF2255C206B89F200B88054 /* CustomersController.swift */,
+				ACF22568206BA21B00B88054 /* CustomerProfileContoller.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				ACF22559206B6ADD00B88054 /* LocationCell.swift in Sources */,
 				AC163F23204D5179005E438E /* AppDelegate.swift in Sources */,
 				ACB549DE204EB3890043F75B /* HeaderCell.swift in Sources */,
+				ACF22569206BA21B00B88054 /* CustomerProfileContoller.swift in Sources */,
 				ACF225402060E27400B88054 /* EditProductCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
