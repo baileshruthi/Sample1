@@ -48,4 +48,6 @@ class CustomerController: UITableViewController {
 //        return footerCell
 //    }
 //    
+    @IBAction func addNewConstumerButtonPressed(_ sender: Any) {
+    }
 }
