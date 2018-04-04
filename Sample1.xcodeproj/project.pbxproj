@@ -11,6 +11,9 @@
 		AC11401320749668007EDCAC /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11401220749668007EDCAC /* ReportController.swift */; };
 		AC11401520749A6E007EDCAC /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11401420749A6E007EDCAC /* PaymentController.swift */; };
 		AC1140172074B559007EDCAC /* MyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1140162074B559007EDCAC /* MyAccountController.swift */; };
+		AC11401A2074BEB4007EDCAC /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1140182074BEB4007EDCAC /* PaymentCell.swift */; };
+		AC11401B2074BEB4007EDCAC /* PaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1140192074BEB4007EDCAC /* PaymentCell.xib */; };
+		AC11401E2074D16B007EDCAC /* PaymentDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11401D2074D16B007EDCAC /* PaymentDetailsController.swift */; };
 		AC129B73206BC50E0082DB60 /* DeliveryBoyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC129B72206BC50E0082DB60 /* DeliveryBoyController.swift */; };
 		AC129B76206BD0B00082DB60 /* DeliveryBoyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC129B74206BD0B00082DB60 /* DeliveryBoyCell.swift */; };
 		AC129B77206BD0B00082DB60 /* DeliveryBoyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC129B75206BD0B00082DB60 /* DeliveryBoyCell.xib */; };
@@ -63,6 +66,9 @@
 		AC11401220749668007EDCAC /* ReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
 		AC11401420749A6E007EDCAC /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
 		AC1140162074B559007EDCAC /* MyAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountController.swift; sourceTree = "<group>"; };
+		AC1140182074BEB4007EDCAC /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		AC1140192074BEB4007EDCAC /* PaymentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCell.xib; sourceTree = "<group>"; };
+		AC11401D2074D16B007EDCAC /* PaymentDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsController.swift; sourceTree = "<group>"; };
 		AC129B72206BC50E0082DB60 /* DeliveryBoyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBoyController.swift; sourceTree = "<group>"; };
 		AC129B74206BD0B00082DB60 /* DeliveryBoyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBoyCell.swift; sourceTree = "<group>"; };
 		AC129B75206BD0B00082DB60 /* DeliveryBoyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryBoyCell.xib; sourceTree = "<group>"; };
@@ -123,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC11401C2074BEBE007EDCAC /* Payment Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC1140182074BEB4007EDCAC /* PaymentCell.swift */,
+				AC1140192074BEB4007EDCAC /* PaymentCell.xib */,
+			);
+			path = "Payment Cell";
+			sourceTree = "<group>";
+		};
 		AC163F16204D5179005E438E = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +186,7 @@
 				ACF2253D205FAC4F00B88054 /* Product Cells */,
 				ACF225422060E36300B88054 /* Edit Prodcut Cell */,
 				ACF2254F206A125100B88054 /* Network Cell */,
+				AC11401C2074BEBE007EDCAC /* Payment Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +204,7 @@
 				AC11401220749668007EDCAC /* ReportController.swift */,
 				AC11401420749A6E007EDCAC /* PaymentController.swift */,
 				AC1140162074B559007EDCAC /* MyAccountController.swift */,
+				AC11401D2074D16B007EDCAC /* PaymentDetailsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,6 +360,7 @@
 				ACF2254E206A0C3A00B88054 /* NetworkCell.xib in Resources */,
 				ACF2254820610C6400B88054 /* EditProductHeaderCell.xib in Resources */,
 				AC163F2D204D5179005E438E /* LaunchScreen.storyboard in Resources */,
+				AC11401B2074BEB4007EDCAC /* PaymentCell.xib in Resources */,
 				AC67A52320733D91001F9B8C /* DeliveryBoyDetailsCell.xib in Resources */,
 				ACF2253C205FA5ED00B88054 /* ProductCell.xib in Resources */,
 				ACF225412060E27400B88054 /* EditProductCell.xib in Resources */,
@@ -365,9 +383,11 @@
 				AC67A525207355B6001F9B8C /* TotalSubscriptionsController.swift in Sources */,
 				ACB54A07204FF7770043F75B /* UnableToDeliverController.swift in Sources */,
 				AC67A528207356D7001F9B8C /* TotalSubscriptionsCell.swift in Sources */,
+				AC11401A2074BEB4007EDCAC /* PaymentCell.swift in Sources */,
 				AC67A51D206CD77E001F9B8C /* DeliveryBoyProfileController.swift in Sources */,
 				ACF2253B205FA5ED00B88054 /* ProductCell.swift in Sources */,
 				ACF22551206A130500B88054 /* NetworkController.swift in Sources */,
+				AC11401E2074D16B007EDCAC /* PaymentDetailsController.swift in Sources */,
 				ACF22560206B93E200B88054 /* CustomerCell.swift in Sources */,
 				AC163F25204D5179005E438E /* MainViewController.swift in Sources */,
 				ACF2255D206B89F200B88054 /* CustomersController.swift in Sources */,

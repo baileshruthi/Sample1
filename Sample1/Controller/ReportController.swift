@@ -11,6 +11,7 @@ import UIKit
 
 class ReportController: UIViewController {
     
+    @IBOutlet weak var reportsView: UIView!
     @IBOutlet weak var products: UITextField!
     @IBOutlet weak var location: UITextField!
     @IBOutlet weak var fromDate: UITextField!
@@ -18,6 +19,16 @@ class ReportController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (viewTapped))
+        reportsView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func viewTapped() {
+        products.endEditing(true)
+        location.endEditing(true)
+        fromDate.endEditing(true)
+        toDate.endEditing(true)
     }
     
     @IBAction func getReportButtonPressed(_ sender: Any) {

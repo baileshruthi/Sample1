@@ -17,6 +17,9 @@ class  AddNewDeliveryBoyController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var addNewBoyView: UIView!
     @IBOutlet weak var customersTableView: UITableView!
+    @IBOutlet weak var location: UITextField!
+    @IBOutlet weak var deliveryBoyName: UITextField!
+    @IBOutlet weak var contactNumber: UITextField!
     
     
     override func viewDidLoad() {
@@ -24,6 +27,10 @@ class  AddNewDeliveryBoyController: UIViewController, UITableViewDelegate, UITab
         
         customersTableView.dataSource = self
         customersTableView.delegate = self
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (viewTapped))
+        addNewBoyView.addGestureRecognizer(tapGesture)
+    
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,6 +46,13 @@ class  AddNewDeliveryBoyController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
+    }
+    
+    //TODO: Declare tableViewTapped here:
+    @objc func viewTapped () {
+        location.endEditing(true)
+        deliveryBoyName.endEditing(true)
+        contactNumber.endEditing(true)
     }
     
     @IBAction func addCustomersButtonPressed(_ sender: Any) {

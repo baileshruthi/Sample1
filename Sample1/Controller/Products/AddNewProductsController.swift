@@ -20,6 +20,7 @@ class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPicker
     let brandPicker = UIPickerView()
     let quantityPicker = UIPickerView()
     
+    @IBOutlet var prodcutsView: UIView!
     @IBOutlet weak var productType: UITextField!
     @IBOutlet weak var brand: UITextField!
     @IBOutlet weak var price: UITextField!
@@ -42,6 +43,8 @@ class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPicker
         brand.inputView = brandPicker
         quantity.inputView = quantityPicker
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (viewTapped))
+        prodcutsView.addGestureRecognizer(tapGesture)
         
     }
     
@@ -93,6 +96,10 @@ class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPicker
         self.view.endEditing(false)
     }
     
+    //TODO: Declare tableViewTapped here:
+    @objc func viewTapped () {
+        price.endEditing(true)
+    }
     
     @IBAction func saveChangesButtonPressed(_ sender: Any) {
         print("save changes button pressed")
