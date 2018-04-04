@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AC11401120738C82007EDCAC /* TomorrowsDeliveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11401020738C82007EDCAC /* TomorrowsDeliveryController.swift */; };
+		AC11401320749668007EDCAC /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11401220749668007EDCAC /* ReportController.swift */; };
+		AC11401520749A6E007EDCAC /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11401420749A6E007EDCAC /* PaymentController.swift */; };
+		AC1140172074B559007EDCAC /* MyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1140162074B559007EDCAC /* MyAccountController.swift */; };
 		AC129B73206BC50E0082DB60 /* DeliveryBoyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC129B72206BC50E0082DB60 /* DeliveryBoyController.swift */; };
 		AC129B76206BD0B00082DB60 /* DeliveryBoyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC129B74206BD0B00082DB60 /* DeliveryBoyCell.swift */; };
 		AC129B77206BD0B00082DB60 /* DeliveryBoyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC129B75206BD0B00082DB60 /* DeliveryBoyCell.xib */; };
@@ -57,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		AC11401020738C82007EDCAC /* TomorrowsDeliveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowsDeliveryController.swift; sourceTree = "<group>"; };
+		AC11401220749668007EDCAC /* ReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
+		AC11401420749A6E007EDCAC /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		AC1140162074B559007EDCAC /* MyAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountController.swift; sourceTree = "<group>"; };
 		AC129B72206BC50E0082DB60 /* DeliveryBoyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBoyController.swift; sourceTree = "<group>"; };
 		AC129B74206BD0B00082DB60 /* DeliveryBoyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBoyCell.swift; sourceTree = "<group>"; };
 		AC129B75206BD0B00082DB60 /* DeliveryBoyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryBoyCell.xib; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 				AC67A51B206CCD4D001F9B8C /* Designable */,
 				ACF22552206A3C0700B88054 /* Products */,
 				ACF2255B206B89C200B88054 /* Network */,
+				AC11401220749668007EDCAC /* ReportController.swift */,
+				AC11401420749A6E007EDCAC /* PaymentController.swift */,
+				AC1140162074B559007EDCAC /* MyAccountController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC11401120738C82007EDCAC /* TomorrowsDeliveryController.swift in Sources */,
+				AC1140172074B559007EDCAC /* MyAccountController.swift in Sources */,
 				ACF2254720610C6400B88054 /* EditProductHeaderCell.swift in Sources */,
 				AC67A525207355B6001F9B8C /* TotalSubscriptionsController.swift in Sources */,
 				ACB54A07204FF7770043F75B /* UnableToDeliverController.swift in Sources */,
@@ -364,7 +374,9 @@
 				AC129B76206BD0B00082DB60 /* DeliveryBoyCell.swift in Sources */,
 				AC129B73206BC50E0082DB60 /* DeliveryBoyController.swift in Sources */,
 				ACF22532205B9A0200B88054 /* MyProductsController.swift in Sources */,
+				AC11401320749668007EDCAC /* ReportController.swift in Sources */,
 				ACF225442060E77F00B88054 /* EditProductController.swift in Sources */,
+				AC11401520749A6E007EDCAC /* PaymentController.swift in Sources */,
 				ACF22556206A3F5400B88054 /* AddNewLocation.swift in Sources */,
 				AC129B79206BDAED0082DB60 /* DesignableImage.swift in Sources */,
 				ACF22537205F885E00B88054 /* ProductAddButton.swift in Sources */,

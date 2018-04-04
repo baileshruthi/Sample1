@@ -19,7 +19,7 @@ class MenuController : UITableViewController {
     let nameArray = ["Dealer1","Dealer2","Dealer3","Dealer4"]
     let imageArray = ["team-1","team-2","team-3","team-4"]
     
-    let identities = ["A","B","C","D","E","F","G","H"]
+    let identities = ["A","B","C","D","E","F"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class MenuController : UITableViewController {
     
     // Declare didSelectRow here:
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
+        if indexPath.row == 0 || indexPath.row == 6 || indexPath.row == 7 {
             navigationController?.popToRootViewController(animated: true)
         } else {
             let mcName = identities[indexPath.row]

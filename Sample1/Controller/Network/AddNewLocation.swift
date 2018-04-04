@@ -22,5 +22,6 @@ class AddNewLocationController: UIViewController {
     
     @IBAction func addLocationButtonPressed(_ sender: Any) {
         print("add location button pressed")
+        navigationController?.popToRootViewController(animated: true)
     }
 }

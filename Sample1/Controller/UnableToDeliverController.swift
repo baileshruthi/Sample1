@@ -136,6 +136,7 @@ class UnableToDeliverController: UIViewController, UITextFieldDelegate, UIPicker
     
     @IBAction func unableToDeliverButtonPressed(_ sender: Any) {
         print("Message sent to customers")
+        navigationController?.popToRootViewController(animated: true)
     }
     
     

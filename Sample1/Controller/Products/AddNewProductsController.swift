@@ -96,5 +96,6 @@ class AddNewProductsController: UIViewController, UIPickerViewDelegate, UIPicker
     
     @IBAction func saveChangesButtonPressed(_ sender: Any) {
         print("save changes button pressed")
+        navigationController?.popToRootViewController(animated: true)
     }
 }

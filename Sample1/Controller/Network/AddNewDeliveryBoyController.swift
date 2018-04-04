@@ -48,6 +48,7 @@ class  AddNewDeliveryBoyController: UIViewController, UITableViewDelegate, UITab
     
     @IBAction func addDeliveryBoyButtonPressed(_ sender: Any) {
         print("add delivery boy button pressed")
+        navigationController?.popToRootViewController(animated: true)
     }
     
 }

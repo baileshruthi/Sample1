@@ -22,5 +22,6 @@ class AddNewCustomerController: UIViewController {
     }
     
     @IBAction func addCustomerButton(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
     }
 }
